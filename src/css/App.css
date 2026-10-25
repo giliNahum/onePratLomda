@@ -1,0 +1,189 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F6E467;
+    font-family: 'assistant';
+    color: #000000;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    Font-size: calc(1.1vh + 0.5vw);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.bahad6 {
+    height: 5rem;
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.til {
+    height: 4rem;
+    position: absolute;
+    z-index: 10;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.symbols {
+    position: absolute;
+    z-index: 4;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+/* general */
+
+.boldText {
+    font-family: assistant-bold;
+}
+
+.backBtn {
+    width: 5.5rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.nextBtn {
+    width: 5.5rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+}
+
+.nextBtn:hover {
+    transform: scale(1.15);
+}
+.backBtn:hover {
+    transform: scale(1.15);
+}
+
+.nextBtnDisable {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.nextBtnDisable:hover {
+    transform: scale(1);
+}
+
+.textBtn {
+    padding: 0.6rem 8rem;
+    font-family: "assistant-bold";
+    font-size: 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #000000;
+    transition: all .2s linear;
+    border: none;
+    text-transform: none;
+    margin-top: -1.5rem;
+    z-index: 2;
+    animation: pulseText 1.5s ease infinite;
+}
+
+.textBtn:hover {
+    animation: none;
+    transform: scale(1.055);
+}
+
+@keyframes pulseText {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.textBtnDisabled {
+    background-color: #9593AD;
+    cursor: auto;
+    animation: none;
+}
+
+.blur-background {
+    background-color: #0000004D;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 3;
+}
+
+.title {
+    font-family: "assistant-bold";
+    font-size: 2.2rem;
+    position: relative;
+    top: 8rem;
+}
+
+@media (max-width: 950px) {
+    .title {
+        top: 10rem;
+    }
+}
+
+
+
+@font-face {
+    font-family: assistant;
+    src: url('/src/assets/fonts/Assistant/Assistant-Regular.ttf');
+}
+
+@font-face {
+    font-family: assistant-bold;
+    src: url('/src/assets/fonts/Assistant/Assistant-Bold.ttf');
+}
+
+@font-face {
+    font-family: assistant-semiBold;
+    src: url('/src/assets/fonts/Assistant/Assistant-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: assistant-extraBold;
+    src: url('/src/assets/fonts/Assistant/Assistant-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: fredoka;
+    src: url('/src/assets/fonts/Fredoka/Fredoka-Bold.ttf');
+}
+@font-face {
+    font-family: fredoka-medium;
+    src: url('/src/assets/fonts/Fredoka/Fredoka-Medium.ttf');
+}

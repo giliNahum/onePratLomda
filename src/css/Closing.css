@@ -1,0 +1,319 @@
+
+/* ReviewPrat1 */
+
+/* ReviewPrat1 */
+
+.ReviewPrat1 {
+    width: 100vw;
+    height: 100vh;
+    direction: rtl;
+    position: relative;
+    overflow: hidden;
+}
+
+.ReviewPrat1-content {
+    margin-top: 8rem;
+}
+
+.reviewInstruction {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+
+/* כפתור חזרה זמני אם אין לך backBtn בתוך הקומפוננטה */
+.backBtnText {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    background: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.backBtnText:hover {
+    font-weight: bold;
+}
+
+@media (max-width: 950px) {
+    .ReviewPrat1-content {
+        margin-top: 11rem;
+    }
+}
+
+/* systemWarning */
+
+
+.systemWarning-tabs {
+    position: absolute;
+    top: 1.2rem;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.systemWarning-tab {
+    background-color: white;
+    border: none;
+    border-left: 0.1rem solid #d8d8d8;
+    padding: 0.45rem 1rem;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.systemWarning-tab-active {
+    background-color: #ffe15a;
+    font-weight: bold;
+}
+
+.systemWarning-card {
+    width: 30rem;
+    min-height: 15rem;
+    background-color: white;
+    margin: 10rem auto 0;
+    position: relative;
+    text-align: center;
+    padding: 1.7rem 1rem 1.2rem;
+    border-radius: 10px;
+}
+
+.systemWarning-card-title {
+    font-size: 1.7rem;
+    margin-bottom: 1.6rem;
+}
+
+.systemWarning-icon {
+    width: 4rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.systemWarning-icon-right {
+    right: 1rem;
+}
+
+.systemWarning-icon-left {
+    left: 1rem;
+}
+
+.systemWarning-img {
+    width: 20rem;
+    max-height: 12rem;
+    object-fit: contain;
+    margin-bottom: 0;
+}
+
+.systemWarning-text {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 1rem auto;
+    width: 85%;
+}
+
+.systemWarning-practiceBtn {
+    margin-top: 1rem;
+    padding: 0.6rem 7rem;
+}
+
+.systemWarning-question {
+    width: fit-content;
+    margin: 2rem auto 0;
+}
+
+@media (max-width: 950px) {
+    .systemWarning-card {
+        margin: 14rem auto 0;
+    }
+}
+
+
+/* ClosePrat1 */
+
+.ClosePrat1-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 1rem;
+}
+
+.closePrat1Img-container {
+    position: relative;
+}
+
+.bubble-ClosePrat10 {
+    font-size: 1.3rem;
+    padding: 1.5rem 3rem 2.5rem 1rem;
+    max-width: 15rem;
+    margin-bottom: -4rem;
+    margin-right: 4.8rem;
+}
+
+.bubble-ClosePrat11 {
+    font-size: 1.3rem;
+    padding: 2.5rem 4rem 3.5rem 2rem;
+    max-width: 20rem;
+    margin-bottom: -5rem;
+    margin-right: 4.8rem;
+}
+
+.ktzina-ClosePrat1 {
+    width: 8rem;
+}
+
+.closePrat1Img {
+    width: 45rem;
+}
+
+.closeSummaryImg {
+    width: 25rem;
+}
+
+.closePrat1Btn {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1rem;
+    z-index: 2;
+    background-color: #57A5FF;
+    border: 0px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    font-family: "assistant-bold";
+    cursor: pointer;
+    animation: pulse 1.3s ease infinite;
+    transition: transform 0.25s ease;
+}
+
+.closePrat1Btn-disabled {
+    animation: none;
+    transform: scale(1);
+}
+
+.closePrat1Btn:hover {
+    animation: none;
+    transform: scale(1.13);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 980px) {
+    .closePrat1Img {
+        width: 35rem;
+    }
+
+    .ClosePrat1-content {
+        margin-top: 13rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .closePrat1Img {
+        width: 30rem;
+    }
+
+    .ClosePrat1-content {
+        margin-top: 14rem;
+        gap: 0.5rem;
+    }
+
+    .closeSummaryImg {
+        width: 20rem;
+    }
+}
+
+.reviewSubtitle {
+    margin-top: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.circlesContainer {
+    position: relative;
+    width: 35rem;
+    height: 25rem;
+    margin: 1rem auto 0;
+}
+
+.reviewCircle {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: none;
+    padding: 2.5rem 2rem 2rem;
+    font-family: inherit;
+    font-size: 1.3rem;
+    line-height: 1.55;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.reviewCircle:hover {
+    transform: scale(1.04);
+}
+
+.reviewCircle span {
+    display: block;
+}
+
+.circleTitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.circleNotes {
+    top: 0;
+    right: 3rem;
+    background-color: rgba(255, 255, 255, 0.80);
+    color: #111;
+}
+
+.circleNoMatch {
+    top: 0;
+    left: 3rem;
+    background-color: rgba(0, 0, 0, 0.80);
+    color: white;
+}
+
+.circleReportGaps {
+    top: 11rem;
+    right: 10rem;
+    background-color: rgba(218, 230, 243, 0.80);
+    color: #111;
+}
+
+.visitedNotes {
+    background-color: rgba(231, 231, 231, 0.8);
+    color: #111;
+}
+
+.visitedNoMatch {
+    background-color: rgba(156, 157, 159, 0.80);
+    color: #ffffff;
+}
+
+.visitedReportGaps {
+    background-color: rgba(198, 203, 207, 0.80);
+    color: rgb(0, 0, 0);
+}
